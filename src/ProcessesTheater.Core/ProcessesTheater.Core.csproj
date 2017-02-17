@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{164CFEAB-9FD5-415F-8411-2EE08C922BE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProcessesTheater.Core</RootNamespace>
+    <AssemblyName>ProcessesTheater.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractCastBehavior.cs" />
+    <Compile Include="AbstractWrapperBehavior.cs" />
+    <Compile Include="AbstractWrapperCause.cs" />
+    <Compile Include="ActionBehavior.cs" />
+    <Compile Include="BasicCharacter.cs" />
+    <Compile Include="BatchEffect.cs" />
+    <Compile Include="BehaviorExtensions.cs" />
+    <Compile Include="CauseExtensions.cs" />
+    <Compile Include="ChainBehavior.cs" />
+    <Compile Include="DebugBehavior.cs" />
+    <Compile Include="DebugCause.cs" />
+    <Compile Include="Eventing\ActionMessageHandler.cs" />
+    <Compile Include="Eventing\Bus.cs" />
+    <Compile Include="Eventing\CommandMessage.cs" />
+    <Compile Include="Eventing\EventMessage.cs" />
+    <Compile Include="Eventing\IBus.cs" />
+    <Compile Include="Eventing\IMessageHandler.cs" />
+    <Compile Include="Eventing\IndexHandler.cs" />
+    <Compile Include="Eventing\InMemoryBus.cs" />
+    <Compile Include="Eventing\IRequestHandler.cs" />
+    <Compile Include="Eventing\Message.cs" />
+    <Compile Include="Eventing\ParameterlessActionMessageHandler.cs" />
+    <Compile Include="Eventing\Request.cs" />
+    <Compile Include="ExceptionSuppressingWrapperBehavior.cs" />
+    <Compile Include="ExceptionSuppressingWrapperCause.cs" />
+    <Compile Include="ExecutionDecision.cs" />
+    <Compile Include="IBehavior.cs" />
+    <Compile Include="ICause.cs" />
+    <Compile Include="ICharacter.cs" />
+    <Compile Include="IEffect.cs" />
+    <Compile Include="IndicatorCause.cs" />
+    <Compile Include="IQueueCause.cs" />
+    <Compile Include="Logging\ConsoleLog.cs" />
+    <Compile Include="Logging\EmptyLog.cs" />
+    <Compile Include="Logging\ILog.cs" />
+    <Compile Include="MemoryQueueCause.cs" />
+    <Compile Include="MultipleEffects.cs" />
+    <Compile Include="MultiTimerCause.cs" />
+    <Compile Include="NowCause.cs" />
+    <Compile Include="PauseWrapperCause.cs" />
+    <Compile Include="PoolWrapperCause.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestCommand.cs" />
+    <Compile Include="RequestReplyCause.cs" />
+    <Compile Include="RequiredWrapperCause.cs" />
+    <Compile Include="RetryWrapperBehavior.cs" />
+    <Compile Include="RetryWrapperCause.cs" />
+    <Compile Include="RevolverCause.cs" />
+    <Compile Include="SingleTaskCharacter.cs" />
+    <Compile Include="SingleThreadCharacter.cs" />
+    <Compile Include="SingleValueEffect.cs" />
+    <Compile Include="TaskPoolCharacter.cs" />
+    <Compile Include="TimerElapsedEffect.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
