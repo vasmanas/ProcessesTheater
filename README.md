@@ -1,4 +1,4 @@
-# ProcessesTheater
+# Processes Theater
 Easier parallel processes creation, understanding and maintenance.
 
 Want to create multi process aplication it is simple:
