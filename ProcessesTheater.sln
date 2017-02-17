@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{740E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessesTheater.Core", "src\ProcessesTheater.Core\ProcessesTheater.Core.csproj", "{164CFEAB-9FD5-415F-8411-2EE08C922BE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWriter", "samples\ConsoleWriter\ConsoleWriter.csproj", "{D6A5B74B-8DF7-4D8B-B834-1F1183379460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumer", "samples\ProducerConsumer\ProducerConsumer.csproj", "{8B2AD08B-1155-48DE-AFAC-06DCD6A552C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +23,21 @@ Global
 		{164CFEAB-9FD5-415F-8411-2EE08C922BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{164CFEAB-9FD5-415F-8411-2EE08C922BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{164CFEAB-9FD5-415F-8411-2EE08C922BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A5B74B-8DF7-4D8B-B834-1F1183379460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A5B74B-8DF7-4D8B-B834-1F1183379460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A5B74B-8DF7-4D8B-B834-1F1183379460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A5B74B-8DF7-4D8B-B834-1F1183379460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2AD08B-1155-48DE-AFAC-06DCD6A552C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2AD08B-1155-48DE-AFAC-06DCD6A552C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2AD08B-1155-48DE-AFAC-06DCD6A552C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2AD08B-1155-48DE-AFAC-06DCD6A552C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{164CFEAB-9FD5-415F-8411-2EE08C922BE4} = {8EA88A67-2DE1-43CD-862E-E5A15009A098}
+		{D6A5B74B-8DF7-4D8B-B834-1F1183379460} = {740E5DF9-36FC-46C5-988B-C9524335F783}
+		{8B2AD08B-1155-48DE-AFAC-06DCD6A552C0} = {740E5DF9-36FC-46C5-988B-C9524335F783}
 	EndGlobalSection
 EndGlobal
